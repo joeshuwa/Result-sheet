@@ -8,28 +8,26 @@
 
 body{
     background-color:aliceblue;
+    display:grid;
+    place-items:center;
+   
 }
 
-body .container{
+body main{
     font-family: 'Hanken Grotesk', sans-serif;
    min-width: 800px;
     min-height: 100vh;
-    position: absolute;
     background-color:aliceblue;
-    display: flex;
+    display: grid;
+    place-items: center;
+    padding-right:250px;
     
-    align-items: center;
-    margin-left: 400px;
-    
-    /* margin-top:150px; */
-    /* margin-left: 400px; */
 }
 
-body .container .front{
+body main .front{
     background:linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: white;
     position: absolute;
-    /* right:200px; */
     width:300px;
     height:430px;
     border: 2px hidden hsla(256, 72%, 46%, 1);
@@ -79,7 +77,7 @@ body .container .front{
 }
 
 
-.container .back {
+main .back {
     background-color: white;
     position: relative;
     left: 280px;
@@ -94,10 +92,7 @@ body .container .front{
 .writing{
     font-size: 14px;
     text-align: center;
-    margin-bottom: 1rem;
-    margin-right: 4rem;
-   
-    
+     margin: 0 3rem 1rem 3rem;
 }
 h3{
     margin-top: 1.5rem;
@@ -151,7 +146,7 @@ i{
     font-size: small ;
 }
 @media Screen and (max-width: 375px) {
-    .container .back{
+    main .back{
         left:0;
         top: 380px;
         width:270px;
@@ -162,7 +157,7 @@ i{
         margin-left: 1rem;
     }
 
-    body .container .front{
+    body main .front{
         height: 400px;
         width: 270px;
     }
@@ -189,11 +184,11 @@ i{
         padding-bottom: 1rem;
         font-size: 13px;
     }
-    body .container{
+    body main{
         background-color: black;
     }
     body{
-        background-color: black;
+    background-color:black;
     }
     }
    
