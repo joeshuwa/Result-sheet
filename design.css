@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+body .container{
+    font-family: 'Hanken Grotesk', sans-serif;
+   min-width: 800px;
+    min-height: 100vh;
+    position: absolute;
+    background-color:aliceblue;
+    display: flex;
+    
+    align-items: center;
+    margin-left: 400px;
+    
+    /* margin-top:150px; */
+    /* margin-left: 400px; */
+}
+
+body .container .front{
+    background:linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    position: absolute;
+    /* right:200px; */
+    width:300px;
+    height:430px;
+    border: 2px hidden hsla(256, 72%, 46%, 1);
+    border-radius: 15px;
+    display: grid;
+    justify-items: center;
+    z-index: 1;
+   
+}
+
+.front .first{
+    font-size: x-large;
+    padding: 2rem 0;
+    margin-right:3rem
+}
+.score {
+    width:180px;
+    height:180px;
+    border: 1px hidden rgb(12, 12, 105);
+    border-radius: 50%;
+    background:linear-gradient(to top,hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1));
+    padding: 50px ;
+    display: flex;
+    justify-content: center;
+    margin-top:-4rem;
+
+}
+
+
+.score .big{
+    font-size: 50px;
+    font-weight: 900;
+    margin-right: 1rem;
+
+}
+
+
+.small{
+    font-weight: 200;
+    font-size: 14px;
+    padding-left: 0.5rem;
+} 
+.middle{
+    font-size: 30px;
+    padding-right:1rem;
+    margin-top:-4rem;
+}
+
+
+.container .back {
+    background-color: white;
+    position: relative;
+    left: 280px;
+    width:300px;
+    height:430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+.writing{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+   
+    
+}
+h3{
+    margin-top: 1.5rem;
+}
+
+.back h3, p{
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+.back .space{
+    margin-left:5rem;
+    color:black
+}
+
+.pink{
+    color:hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.034);
+    padding: 0.7rem 0.5rem;
+}
+
+.yellow{
+    color:hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.075);
+    padding:0.7rem 0.5rem
+}
+
+.cyan{
+    color:hsl(166, 100%, 37%);
+    background-color:hsla(166, 100%, 37%, 0.082);
+    padding: 0.7rem 0.5rem;
+}
+
+.blue{
+    color:hsl(234, 85%, 45%);
+    background-color:hsla(234, 85%, 45%, 0.068);
+    padding:0.7rem 0.5rem;
+
+}
+
+button{
+    border-radius: 5em;
+    padding: 0.8rem 5rem;
+    margin: 0 auto 2rem;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: white;   
+}
+ 
+i{
+    font-size: small ;
+}
+@media Screen and (max-width: 375px) {
+    .container .back{
+        left:0;
+        top: 380px;
+        width:270px;
+        height: 400px;
+    }
+
+    .back h3, p{
+        margin-left: 1rem;
+    }
+
+    body .container .front{
+        height: 400px;
+        width: 270px;
+    }
+
+    .front .first{
+        font-size:large;
+        padding-left: 2rem;
+        margin-right:2rem
+    }
+
+    .score {
+        width:150px;
+        height:150px;
+    }
+    .score .big{
+        padding-left:1rem;
+    }
+
+    .small{
+        padding-left:1.5rem;
+    }
+    .writing{
+        margin:0 1.5rem;
+        padding-bottom: 1rem;
+        font-size: 13px;
+    }
+    body .container{
+        background-color: black;
+    }
+    body{
+        background-color: black;
+    }
+    }
+   
